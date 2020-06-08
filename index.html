@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 align="center">VIT CGPA Calculator</h1><br>
+    <div class="col-sm-12 col-md-12 col-lg-12" align="center">
+        <div class="card-container">
+            <h3>Total Marks calculator</h3>
+            <form align="center" class="forms">
+                <!-- <div class="form-group">
+                    <label for="CREDITS">CREDITS</label>
+                    <input type="text" class="form-control" placeholder="Enter CREDITS" id="CREDITS">
+                </div> -->
+                <br>
+                <div class="form-group row">
+                    <label for="CAT1" class="col-sm-3 col-form-label">CAT-1:</label>
+                    <div class="input-group col">
+                        <input type="text" class="form-control" placeholder="Enter CAT-1 MARKS" id="CAT1">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon">&nbsp; max 50 </span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label for="CAT2" class="col-sm-3 col-form-label">CAT-2:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter CAT-2 MARKS" id="CAT2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 50 </span>
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label for="Internals" class="col-sm-3 col-form-label">Internals:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter Internals" id="INTERNALS">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 30 </span>
+                            </div>
+                    </div>
+                </div><br>
+                <div class="form-group row">
+                    <label for="LAB" class="col-sm-3 col-form-label">Lab:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter LAB internel MARKS" id="LAB">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 60 </span>
+                            </div>
+                    </div>
+                </div><br>
+                <div class="form-group row">
+                    <label for="PROJECT" class="col-sm-3 col-form-label">Project:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter PROJECT MARKS" id="PROJECT">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 100 </span>
+                            </div>
+                    </div>
+                </div><br>
+                <!-- <div class="form-group row">
+                    <label for="FAT" class="col-sm-3 col-form-label">FAT:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter FAT MARKS" id="FAT">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 50 </span>
+                            </div>
+                    </div>
+                </div><br> -->
+                <div class="form-group row">
+                    <label for="ADD" class="col-sm-3 col-form-label">Additional Learning:</label>
+                    <div class="input-group col">
+                            <input type="text" class="form-control" placeholder="Enter Additional learning MARKS" id="ADD">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon">&nbsp; max 10 </span>
+                            </div>
+                    </div>
+                </div><br><br>
+                <input type="button" onclick="myfunc()" value="submit" />
+            </form>
+            <div>
+                <h2 align="center"><span id="TFat"></span></h2>
+                <h2 align="center"><span id="LFat"></span></h2>
+                <h2 align="center"><span id="Fat"></span></h2>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
